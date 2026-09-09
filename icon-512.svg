@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Blue Gradient Background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Rounded Square Background -->
+  <rect width="512" height="512" rx="100" fill="url(#bgGradient)"/>
+  
+  <!-- White Circle -->
+  <circle cx="256" cy="256" r="140" fill="#ffffff" filter="url(#shadow)"/>
+  
+  <!-- Lightning Bolt Icon (Electric Blue) -->
+  <g fill="#2563eb">
+    <!-- Top part of lightning -->
+    <polygon points="256,110 290,180 250,180 270,250 180,250 256,360 220,260 260,260 240,190"/>
+  </g>
+  
+  <!-- Gradient overlay for depth -->
+  <circle cx="256" cy="256" r="140" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.2"/>
+</svg>
